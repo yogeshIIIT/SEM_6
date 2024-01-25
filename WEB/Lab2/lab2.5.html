@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Video</title>
+<style>
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        text-align: center;
+     } 
+     h2{
+        text-align: center;
+     }
+    
+
+</style>
+</head>
+<body>
+    <h1>Assignment -2.5</h1>
+    <h2>canvas</h2>
+    <div class="container">
+<canvas id="myCanvas" width="600" height="600" style="border:1px solid grey;"></canvas>
+
+<script>
+
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+ctx.fillStyle = 'rgba(255,0,0,0.5)';
+ctx.fillRect(200,200,200,200);
+
+ctx.fillStyle = 'rgba(0,255,0,0.5)';
+ctx.fillRect(300,300,200,200);
+</script>
+    </div>
+   
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Video</title>
+<style>
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        text-align: center;
+     } 
+     h2{
+        text-align: center;
+     }
+    
+
+</style>
+</head>
+<body>
+    <h1>Assignment -2.6</h1>
+    <h2>gradient</h2>
+    <div class="container">
+<canvas id="myCanvas" width="600" height="300" style="border:1px solid grey;"></canvas>
+
+<script>
+
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create gradient
+const grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"pink");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,600,300);
+</script>
+    </div>
+   
+</body>
+</html>
+
